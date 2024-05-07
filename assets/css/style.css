@@ -829,7 +829,7 @@ main {
 }
 
 .clients-item img {
-  width: 10%;
+  width: 15%;
   filter: hue-rotate(1);
   transition: var(--transition-1);
 }
