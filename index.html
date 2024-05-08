@@ -956,23 +956,38 @@
         <header>
           <h2 class="h2 article-title">CONTACT</h2>
         </header>
-
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="mailto:vivekchoudhary.me@gmail.com" method="post" class="form" data-form>
+          <form id="contactForm" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit">
+            <button id="submitButton" class="form-btn" type="button">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
           </form>
 
+          <script>
+            document.getElementById("submitButton").addEventListener("click", function () {
+              var form = document.getElementById("contactForm");
+              var formData = new FormData(form);
+              var fullName = formData.get("fullname");
+              var email = formData.get("email");
+              var message = formData.get("message");
+
+              var mailtoLink = "mailto:vivekchoudhary.me@gmail.com" +
+                "?subject=Message from " + encodeURIComponent(fullName) +
+                "&body=" + encodeURIComponent("Email: " + email + "\n\n" + message);
+
+              // Open the default email client with the mailto link
+              window.location.href = mailtoLink;
+            });
+          </script>
 
         </section>
 
