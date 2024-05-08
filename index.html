@@ -956,10 +956,9 @@
         <header>
           <h2 class="h2 article-title">CONTACT</h2>
         </header>
+
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
           <form id="contactForm" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -971,7 +970,6 @@
               <span>Send Message</span>
             </button>
           </form>
-
           <script>
             document.getElementById("submitButton").addEventListener("click", function () {
               var form = document.getElementById("contactForm");
@@ -980,7 +978,7 @@
               var email = formData.get("email");
               var message = formData.get("message");
 
-              var mailtoLink = "mailto:vivekchoudhary.me@gmail.com" +
+              var mailtoLink = "mailto:your_email@gmail.com" + // Replace with your Gmail address
                 "?subject=Message from " + encodeURIComponent(fullName) +
                 "&body=" + encodeURIComponent("Email: " + email + "\n\n" + message);
 
@@ -988,8 +986,8 @@
               window.location.href = mailtoLink;
             });
           </script>
-
         </section>
+
 
 
       </article>
