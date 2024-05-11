@@ -480,16 +480,16 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: inherit;
+  text-decoration: none;
   font-size: 18px;
 }
 
 
 .social-item .social-link:hover {
-  color: var(--light-gray);
+  color: inherit;
+  text-decoration: none;
 }
-
-
 
 
 /*-----------------------------------*\
