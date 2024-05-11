@@ -1,53 +1,20 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+/*-----------------------------------*\ #style.css \*-----------------------------------*/
+/*-----------------------------------*\ #CUSTOM PROPERTY \*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
+  /** * colors */
 
   /* gradient */
-
-  --bg-gradient-onyx: linear-gradient(to bottom right,
-      #266788 3%,
-      #266788 97%);
-  --bg-gradient-jet: linear-gradient(to bottom right,
-      #266788 0%,
-      #266788 100%), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(to bottom right,
-      #266788 0%,
-      #266788 50%);
-  --bg-gradient-yellow-2: linear-gradient(135deg,
-      #51f8ff 0%,
-      #266788 59.86%), #266788;
-  --border-gradient-onyx: linear-gradient(to bottom right,
-      #51f8ff 0%,
-      #51f8ff 50%);
-  --text-gradient-yellow: linear-gradient(to right,
-      #51f8ff,
-      #51f8ff);
-  --text-gradient-green: linear-gradient(to right,
-      #112d3d 0%,
-      #112d3d 100%);
-
+  --bg-gradient-onyx: linear-gradient(to bottom right, #266788 3%, #266788 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, #266788 0%, #266788 100%), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, #266788 0%, #266788 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, #51f8ff 0%, #266788 59.86%), #266788;
+  --border-gradient-onyx: linear-gradient(to bottom right, #51f8ff 0%, #51f8ff 50%);
+  --text-gradient-yellow: linear-gradient(to right, #51f8ff, #51f8ff);
+  --text-gradient-green: linear-gradient(to right, #112d3d 0%, #112d3d 100%);
 
   /* solid */
-
   --jet: #51f8ff;
   --onyx: #266788;
   --eerie-black-1: #266788;
@@ -61,9 +28,7 @@
   --light-gray-70: #51f8ff;
   --bittersweet-shimmer: hsl(0, 98%, 51%);
 
-  /**
-   * typography
-   */
+  /** * typography */
 
   /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
@@ -84,32 +49,19 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
-
+  /** * shadow */
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px #140f07;
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /**
-   * transition
-   */
-
+  /** * transition */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
-
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/*-----------------------------------*\ #RESET \*-----------------------------------*/
 
 *,
 *::before,
@@ -169,13 +121,7 @@ body {
   background: var(--smoky-black);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+/*-----------------------------------*\ #REUSED STYLE \*-----------------------------------*/
 
 .sidebar,
 article {
@@ -323,13 +269,7 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
+/*-----------------------------------*\ #MAIN \*-----------------------------------*/
 
 main {
   margin: 15px 12px;
@@ -337,13 +277,7 @@ main {
   min-width: 259px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
+/*-----------------------------------*\ #SIDEBAR \*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 15px;
@@ -462,14 +396,18 @@ main {
 }
 
 .contact-info a {
-  color: var(--white-2); /* Set the text color to white */
+  color: var(--white-2);
+  /* Set the text color to white */
   font-size: var(--fs-7);
-  text-decoration: none; /* This removes the underline */
+  text-decoration: none;
+  /* This removes the underline */
 }
 
 .contact-info a:hover {
-  color: var(--white-2); /* Ensure color stays white on hover */
-  text-decoration: none; /* This ensures no underline on hover */
+  color: var(--white-2);
+  /* Ensure color stays white on hover */
+  text-decoration: none;
+  /* This ensures no underline on hover */
 }
 
 .contact-info address {
@@ -494,21 +432,21 @@ main {
   color: var(--light-gray);
 }
 
-
 .contact-link {
-  color: inherit; /* This inherits the color from its parent */
-  text-decoration: none; /* This removes the underline */
+  color: inherit;
+  /* This inherits the color from its parent */
+  text-decoration: none;
+  /* This removes the underline */
 }
 
 .contact-link:hover {
-  color: inherit; /* This ensures no color change on hover */
-  text-decoration: none; /* This ensures no underline on hover */
+  color: inherit;
+  /* This ensures no color change on hover */
+  text-decoration: none;
+  /* This ensures no underline on hover */
 }
 
-
-/*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
+/*-----------------------------------*\ #NAVBAR \*-----------------------------------*/
 
 .navbar {
   position: fixed;
@@ -547,13 +485,7 @@ main {
   color: var(--orange-yellow-crayola);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
+/*-----------------------------------*\ #ABOUT \*-----------------------------------*/
 
 .about .article-title {
   margin-bottom: 15px;
@@ -570,12 +502,7 @@ main {
   margin-bottom: 15px;
 }
 
-
-
-/**
- * #service 
- */
-
+/** * #service */
 .service {
   margin-bottom: 35px;
 }
@@ -631,11 +558,7 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #testimonials 
- */
-
+/** * #testimonials */
 .testimonials {
   margin-bottom: 30px;
 }
@@ -689,11 +612,7 @@ main {
   overflow: hidden;
 }
 
-
-/**
- * #testimonials-modal
- */
-
+/** * #testimonials-modal */
 .modal-container {
   position: fixed;
   top: 0;
@@ -813,11 +732,7 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #clients 
- */
-
+/** * #clients */
 .clients {
   margin-bottom: 15px;
 }
@@ -854,23 +769,13 @@ main {
   transition: var(--transition-1);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
+/*-----------------------------------*\ #RESUME \*-----------------------------------*/
 
 .article-title {
   margin-bottom: 30px;
 }
 
-
-/**
- * education and experience 
- */
-
+/** * education and experience */
 .timeline {
   margin-bottom: 30px;
 }
@@ -935,11 +840,7 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
+/** * skills */
 .skills-title {
   margin-bottom: 20px;
 }
@@ -947,7 +848,6 @@ main {
 .skills-list {
   padding: 20px;
 }
-
 
 .skills-item:not(:last-child) {
   margin-bottom: 15px;
@@ -979,13 +879,7 @@ main {
   border-radius: inherit;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #PORTFOLIO
-\*-----------------------------------*/
+/*-----------------------------------*\ #PORTFOLIO \*-----------------------------------*/
 
 .filter-list {
   display: none;
@@ -1107,7 +1001,6 @@ main {
 
 .project-item-icon-box {
   --scale: 0.8;
-
   background: var(--jet);
   color: var(--orange-yellow-crayola);
   position: absolute;
@@ -1161,13 +1054,7 @@ main {
   font-weight: var(--fw-300);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
+/*-----------------------------------*\ #BLOG \*-----------------------------------*/
 
 .blog-posts {
   margin-bottom: 10px;
@@ -1257,13 +1144,7 @@ main {
   line-height: 1.6;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
+/*-----------------------------------*\ #CONTACT \*-----------------------------------*/
 
 .mapbox {
   position: relative;
@@ -1388,61 +1269,30 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+/*-----------------------------------*\ #RESPONSIVE \*-----------------------------------*/
 
-
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
+/** * responsive larger than 450px screen */
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
-
+  /** * client */
   .clients-item {
     min-width: calc(33.33% - 10px);
   }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
-
+  /** * #PORTFOLIO, BLOG */
   .project-img,
   .blog-banner-box {
     height: auto;
   }
-
 }
 
-
-
-
-
-/**
- * responsive larger than 580px screen
- */
-
+/** * responsive larger than 580px screen */
 @media (min-width: 580px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /** * CUSTOM PROPERTY */
   :root {
 
-    /**
-     * typography
-     */
-
+    /** * typography */
     --fs-1: 32px;
     --fs-2: 24px;
     --fs-3: 26px;
@@ -1450,15 +1300,9 @@ textarea.form-input::-webkit-resizer {
     --fs-6: 15px;
     --fs-7: 15px;
     --fs-8: 12px;
-
   }
 
-
-
-  /**
-   * #REUSED STYLE
-   */
-
+  /** * #REUSED STYLE */
   .sidebar,
   article {
     width: 520px;
@@ -1483,23 +1327,13 @@ textarea.form-input::-webkit-resizer {
     font-size: 18px;
   }
 
-
-
-  /**
-   * #MAIN
-   */
-
+  /** * #MAIN */
   main {
     margin-top: 60px;
     margin-bottom: 100px;
   }
 
-
-
-  /**
-   * #SIDEBAR
-   */
-
+  /** * #SIDEBAR */
   .sidebar {
     max-height: 180px;
     margin-bottom: 30px;
@@ -1557,12 +1391,7 @@ textarea.form-input::-webkit-resizer {
     width: calc(100% - 64px);
   }
 
-
-
-  /**
-   * #NAVBAR
-   */
-
+  /** * #NAVBAR */
   .navbar {
     border-radius: 20px 20px 0 0;
   }
@@ -1575,12 +1404,7 @@ textarea.form-input::-webkit-resizer {
     --fs-8: 14px;
   }
 
-
-
-  /**
-   * #ABOUT
-   */
-
+  /** * #ABOUT */
   .about .article-title {
     margin-bottom: 20px;
   }
@@ -1590,7 +1414,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* service */
-
   .service-item {
     display: flex;
     justify-content: flex-start;
@@ -1609,7 +1432,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* testimonials */
-
   .testimonials-title {
     margin-bottom: 25px;
   }
@@ -1646,7 +1468,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* testimonials modal */
-
   .modal-container {
     padding: 20px;
   }
@@ -1682,7 +1503,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* clients */
-
   .clients-list {
     gap: 50px;
     margin: 0 -30px;
@@ -1694,12 +1514,7 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 35px);
   }
 
-
-
-  /**
-   * #RESUME
-   */
-
+  /** * #RESUME */
   .timeline-list {
     margin-left: 65px;
   }
@@ -1718,12 +1533,7 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 25px;
   }
 
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
+  /** * #PORTFOLIO, BLOG */
   .project-img,
   .blog-banner-box {
     border-radius: 16px;
@@ -1737,12 +1547,7 @@ textarea.form-input::-webkit-resizer {
     padding: 25px;
   }
 
-
-
-  /**
-   * #CONTACT
-   */
-
+  /** * #CONTACT */
   .mapbox {
     height: 380px;
     border-radius: 18px;
@@ -1769,23 +1574,12 @@ textarea.form-input::-webkit-resizer {
   .form-btn ion-icon {
     font-size: 18px;
   }
-
 }
 
-
-
-
-
-/**
- * responsive larger than 768px screen
- */
-
+/** * responsive larger than 768px screen */
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /** * REUSED STYLE */
   .sidebar,
   article {
     width: 700px;
@@ -1795,35 +1589,19 @@ textarea.form-input::-webkit-resizer {
     width: 100px;
   }
 
-
-
-  /**
-   * SIDEBAR
-   */
-
+  /** * SIDEBAR */
   .contacts-list {
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
-
+  /** * NAVBAR */
   .navbar-link {
     --fs-8: 15px;
   }
 
-
-
-  /**
-   * ABOUT
-   */
-
+  /** * ABOUT */
   /* testimonials modal */
-
   .testimonials-modal {
     gap: 35px;
     max-width: 680px;
@@ -1833,12 +1611,7 @@ textarea.form-input::-webkit-resizer {
     width: 80px;
   }
 
-
-
-  /**
-   * PORTFOLIO
-   */
-
+  /** * PORTFOLIO */
   .article-title {
     padding-bottom: 20px;
   }
@@ -1871,18 +1644,12 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* portfolio and blog grid */
-
   .project-list,
   .blog-posts-list {
     grid-template-columns: 1fr 1fr;
   }
 
-
-
-  /**
-   * CONTACT
-   */
-
+  /** * CONTACT */
   .input-wrapper {
     grid-template-columns: 1fr 1fr;
   }
@@ -1891,53 +1658,27 @@ textarea.form-input::-webkit-resizer {
     width: max-content;
     margin-left: auto;
   }
-
 }
 
-
-
-
-
-/**
- * responsive larger than 1024px screen
- */
-
+/** * responsive larger than 1024px screen */
 @media (min-width: 1024px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /** * CUSTOM PROPERTY */
   :root {
-
-    /**
-    * shadow
-    */
-
+    /** * shadow */
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** * REUSED STYLE */
   .sidebar,
   article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
 
-
-
-  /**
-   * MAIN 
-   */
-
+  /** * MAIN */
   main {
     margin-bottom: 60px;
   }
@@ -1948,12 +1689,7 @@ textarea.form-input::-webkit-resizer {
     margin: auto;
   }
 
-
-
-  /**
-   * NAVBAR
-   */
-
+  /** * NAVBAR */
   .navbar {
     position: absolute;
     bottom: auto;
@@ -1975,67 +1711,39 @@ textarea.form-input::-webkit-resizer {
     font-weight: var(--fw-500);
   }
 
-
-
-  /**
-   * ABOUT
-   */
+  /** * ABOUT */
 
   /* service */
-
   .service-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
 
   /* testimonials */
-
   .testimonials-item {
     min-width: calc(50% - 15px);
   }
 
   /* clients */
-
   .clients-item {
     min-width: calc(25% - 38px);
   }
 
-
-
-  /**
-   * PORTFOLIO
-   */
-
+  /** * PORTFOLIO */
   .project-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-
-  /**
-   * BLOG
-   */
-
+  /** * BLOG */
   .blog-banner-box {
     height: 230px;
   }
-
 }
 
-
-
-
-
-/**
- * responsive larger than 1250px screen
- */
-
+/** * responsive larger than 1250px screen */
 @media (min-width: 1250px) {
 
-  /**
-   * RESET
-   */
-
+  /** * RESET */
   body::-webkit-scrollbar {
     width: 20px;
   }
@@ -2048,8 +1756,7 @@ textarea.form-input::-webkit-resizer {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
-      inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11), inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
   body::-webkit-scrollbar-thumb:hover {
@@ -2060,12 +1767,7 @@ textarea.form-input::-webkit-resizer {
     height: 60px;
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** * REUSED STYLE */
   .sidebar,
   article {
     width: auto;
@@ -2075,12 +1777,7 @@ textarea.form-input::-webkit-resizer {
     min-height: 100%;
   }
 
-
-
-  /**
-   * MAIN
-   */
-
+  /** * MAIN */
   main {
     max-width: 1200px;
     margin-inline: auto;
@@ -2096,12 +1793,7 @@ textarea.form-input::-webkit-resizer {
     margin: 0;
   }
 
-
-
-  /**
-   * SIDEBAR
-   */
-
+  /** * SIDEBAR */
   .sidebar {
     position: sticky;
     top: 60px;
@@ -2162,14 +1854,8 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
   }
 
-
-
-  /**
-	 * RESUME
-	 */
-
+  /** * RESUME */
   .timeline-text {
     max-width: 700px;
   }
-
 }
