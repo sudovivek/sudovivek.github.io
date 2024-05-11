@@ -958,34 +958,26 @@
         </header>
 
         <section class="contact-form">
+
           <h3 class="h3 form-title">Contact Form</h3>
-          <form id="contactForm" class="form" data-form>
+
+          <form action="https://formspree.io/f/mjvnlnrq" method="post" class="form" data-form>
+
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
+
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button id="submitButton" class="form-btn" type="button">
+
+            <button class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
+
           </form>
-          <script>
-            document.getElementById("submitButton").addEventListener("click", function () {
-              var form = document.getElementById("contactForm");
-              var formData = new FormData(form);
-              var fullName = formData.get("fullname");
-              var email = formData.get("email");
-              var message = formData.get("message");
 
-              var mailtoLink = "mailto:vivekchoudhary.me@gmail.com" + // Replace with your Gmail address
-                "?subject=Message from " + encodeURIComponent(fullName) +
-                "&body=" + encodeURIComponent("Email: " + email + "\n\n" + message);
-
-              // Open the default email client with the mailto link
-              window.location.href = mailtoLink;
-            });
-          </script>
         </section>
 
 
