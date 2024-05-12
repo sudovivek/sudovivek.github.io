@@ -11,7 +11,7 @@ My portfolio website is designed to provide visitors with an overview of my prof
 - **Projects**: Highlights of some of the key projects I have worked on.
 - **Skills**: A list of my technical skills and competencies.
 - **Contact**: How to get in touch with me.
-https://github.com/sudovivek/sudovivek.github.io/edit/main/README.md
+
 ## Technologies Used
 
 The website is built using the following technologies:
