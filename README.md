@@ -20,4 +20,4 @@ The website is built using the following technologies:
 - **CSS**: Styling and layout.
 - **JavaScript**: Interactivity and dynamic elements.
 
-**Website Link**: sudovivek.github.io
+**Website Link**: {https://sudovivek.github.io}
