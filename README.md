@@ -21,4 +21,4 @@ The website is built using the following technologies:
 - **JavaScript**: Interactivity and dynamic elements.
 
 **Website Link**: [ https://sudovivek.github.io ]
-**Website Link**: [https://sudovivek.github.io](https://sudovivek.github.io){:target="_blank"}
+**Website Link**: [Vivek's Portfolio Website](https://sudovivek.github.io){:target="_blank"}
