@@ -41,7 +41,7 @@
 
     .avatar-box img:hover {
         transform: scale(1.1) rotate(0deg); /* Apply hover effect without affecting spin */
-        animation: none; /* Stop the spin animation on hover */
+        animation-play-state: paused; /* Stop the spin animation on hover */
 
     @keyframes spin {
         0%, 100% { transform: rotate(0deg); } /* Start and end at 0 degrees */
