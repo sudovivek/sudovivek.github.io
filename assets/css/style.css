@@ -879,6 +879,15 @@ main {
   border-radius: inherit;
 }
 
+.zoom-link {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.zoom-link:hover {
+    transform: scale(1.1);
+}
+
 /*-----------------------------------*\ #PORTFOLIO \*-----------------------------------*/
 
 .filter-list {
