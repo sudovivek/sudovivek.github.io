@@ -31,7 +31,7 @@
 <style>
     .avatar-box img {
         transition: transform 0.3s ease-in-out;
-        animation: spin 20s infinite; /* Spin for 20 seconds, then pause */
+        animation: spin 2s ease-in-out 0s infinite, pause 20s ease-in-out 2s infinite;
     }
 
     .avatar-box img:hover {
@@ -40,11 +40,13 @@
 
     @keyframes spin {
         0% { transform: rotate(0deg); }
-        50% { transform: rotate(1080deg); } /* 3 full rotations by the halfway point (20s) */
-        100% { transform: rotate(1080deg); } /* Stay at 3 full rotations for the rest of the time (20s pause) */
+        100% { transform: rotate(1080deg); } /* 3 full rotations */
     }
-</style>
-   <!-- <style>*
+
+    @keyframes pause {
+        0%, 100% { transform: rotate(1080deg); } /* Maintain position after spin */
+    }
+</style>   <!-- <style>*
         .avatar-box img {
             transition: transform 0.3s ease-in-out;
         }
