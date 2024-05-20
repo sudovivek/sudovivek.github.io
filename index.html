@@ -29,26 +29,23 @@
 
     <main>
        
-<style>
-    .avatar-box img {
-        transition: transform 0.3s ease-in-out;
-        animation: spin 10s infinite; /* Animation for spinning */
-    }
+        <style>
+            .avatar-box img {
+                transition: transform 0.3s ease-in-out;
+                animation: spin 10s infinite; /* Animation for spinning */
+            }
+        
+            .avatar-box img:hover {
+                transform: scale(1.1);
+            }
+        
+            @keyframes spin {
+                0%, 100% { transform: rotate(0deg); } /* Start and end at 0 degrees */
+                10% { transform: rotate(360deg); } /* Ensure it stays at 3 rounds */
+                100% { transform: rotate(360deg); } /* Ensure it stays at 3 rounds */
+            }
+        </style>
 
-    /*.avatar-box img:hover {
-        transform: scale(1.1);
-    }*/
-
-    .avatar-box img:hover {
-        transform: scale(1.1) rotate(360deg); /* Apply hover effect without affecting spin */
-        animation-play-state: paused; /* Stop the spin animation on hover */
-
-    @keyframes spin {
-        0%, 100% { transform: rotate(0deg); } /* Start and end at 0 degrees */
-        10% { transform: rotate(1080deg); } /* Ensure it stays at 3 rounds */
-        100% { transform: rotate(1080deg); } /* Ensure it stays at 3 rounds */
-    }
-</style>
         <!-- <style>*
         .avatar-box img {
             transition: transform 0.3s ease-in-out;
