@@ -28,58 +28,16 @@
     <!-- #MAIN -->
 
     <main>
-    <style>
-        .avatar-box {
-            position: relative;
-            display: inline-block;
-        }
-
-        .avatar-box img {
-            display: block;
-            width: 80px;
-            height: 80px;
-            transition: transform 0.3s ease-in-out;
-            animation: spin 2s linear infinite;
-            animation-duration: 0s; /* Initially stop the animation */
-        }
-
-        .avatar-box img:hover {
-            transform: scale(1.1);
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Trigger the spin animation every 5 seconds */
-        @keyframes spin-trigger {
-            0%, 80% {
-                animation-duration: 0s;
-            }
-            80.01%, 100% {
-                animation-duration: 2s;
-            }
-        }
-
-        .avatar-box img {
-            animation: spin-trigger 5s linear infinite;
-        }
-    </style>
-        <!--
-    <style>/***
+    
+    <style>*
         .avatar-box img {
             transition: transform 0.3s ease-in-out;
         }
         
         .avatar-box img:hover {
             transform: scale(1.1);
-        }***/
-    </style> -->
+        }
+    </style>
         
         <!-- #SIDEBAR -->
 
