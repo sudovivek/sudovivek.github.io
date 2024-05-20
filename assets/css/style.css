@@ -446,6 +446,21 @@ main {
   /* This ensures no underline on hover */
 }
 
+.avatar-box img {
+    transition: transform 0.3s ease-in-out;
+    animation: spin 10s infinite; /* Animation for spinning */
+}
+
+.avatar-box img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes spin {
+    0%, 100% { transform: rotate(0deg); } /* Start and end at 0 degrees */
+    10% { transform: rotate(360deg); } /* Ensure it stays at 3 rounds */
+    100% { transform: rotate(360deg); } /* Ensure it stays at 3 rounds */
+}
+
 /*-----------------------------------*\ #NAVBAR \*-----------------------------------*/
 
 .navbar {
